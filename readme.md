@@ -4,10 +4,10 @@ If you envy Rubyists for their nice management of gemsets, this collection of sc
 
 With these scripts you:
 - organize all your virtualenvs in `~/.virtualenvs/`
-- create new virtualenvs using the same old `virtualenv` command
-- Always inherit system site packages in new virtualenvs (if you don't want this behaviour, see below)
 - activate virtualenvs using `activate foo`, including bash tab completion
 - list available virtualenvs using `list-envs`
+- create new virtualenvs using the same old `virtualenv` command
+- inherit system site packages in new virtualenvs by default (if you don't want this behaviour, pass `--no-site-packages`)
 
 
 ## Usage
