@@ -65,6 +65,7 @@ export PATH="$HOME/.virtualenvs:$PATH"
 alias activate="source activate-env.sh"
 alias virtualenv="create-env.sh"
 complete -o default -o nospace -W "$(list-envs | awk '{print $0}' ORS=' ')" activate
+complete -o default -o nospace -W "$(list-envs | awk '{print $0}' ORS=' ')" delete-env
 ```
 
 A `source ~/.bash_profile`, or a log-out and log-in later, and you are ready to go.
