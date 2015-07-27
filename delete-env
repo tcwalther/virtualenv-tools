@@ -1,0 +1,26 @@
+#!/bin/bash
+
+delete_env() {
+    cd ~/.virtualenvs
+    rm -Rf $1
+    echo "virtualenv $1 deleted."
+}
+
+if [ -d ~/.virtualenvs/$1 ]
+then
+    if [ $2 == '-y' ]
+    then
+        delete_env $1
+    else
+        echo "Do you really want to delete the virtual environment" $1"?"
+        select yn in "Yes" "No"; do
+        	case $yn in
+        		Yes ) delete_env $1; break;;
+        		No ) exit;;
+        	esac
+        done
+    fi
+else
+    echo "virtualenv $1 doesn't exist."
+    false
+fi
