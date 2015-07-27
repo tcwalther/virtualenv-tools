@@ -18,8 +18,10 @@ $ virtualenv foo
 Creating virtualenv...
 Installing newest pip and ipython...
 Done.
+
 $ # Activate the virtualenv:
 $ activate foo
+
 (foo)$ # Verify that system packages were inherited:
 (foo)$ pip freeze
 nose==1.3.0
@@ -30,8 +32,10 @@ requests==2.7.0
 scipy==0.12.1
 virtualenv==13.1.0
 ... (this is of course a stripped example output)
+
 (foo)$ # Deactivate the virtualenv:
 (foo)$ deactivate
+
 $ # list existing virtualenvs
 $ list-envs
 foo
@@ -42,11 +46,17 @@ Do you really want to delete the virtual environment foo?
 2) No
 #? 1
 virtualenv foo deleted.
+
 $ 
 ```
 
 ## Installation
-Clone this repo into `~/.virtualenvs`. Check that it worked: `ls ~/.virtualenvs/activate-env.sh`
+Clone this repo into `~/.virtualenvs`:
+```bash
+$ git clone https://github.com/tcwalther/virtualenv-tools.git ~/.virtualenvs
+```
+
+Check that it worked: `ls ~/.virtualenvs/activate-env.sh`
 
 Then add the following to your `~/.bash_profile`:
 
