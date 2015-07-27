@@ -24,9 +24,9 @@ else
     elif [ -f ~/.virtualenvs/$1/bin/activate ]  # only proceed if virtualenv was created
     then
         echo "Installing newest pip and ipython..."
-        out=$(source ./activate-env.sh $1 2>&1) && \
-        out=$(easy_install -U setuptools 2>&1) && \
-        out=$(pip install ipython 2>&1) && \
+        out=$(source ./activate-env.sh $1 2>&1 && \
+              easy_install -U setuptools 2>&1 && \
+              pip install ipython 2>&1) && \
         echo 'Done.' || printf "Error when installing. Check the output:\n\n$out\n"
     else  # probably --help was passed, let's print the output
         printf "$out\n"
