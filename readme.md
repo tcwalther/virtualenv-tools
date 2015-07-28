@@ -3,7 +3,7 @@
 
 # Python Virtualenv Tools
 
-If you envy Rubyists for their centralized management of gemsets, this collection of script might be for you. Virtualenvs work great when they are used for a single project each. If you find yourself reusing the same virtualenvs in multiple folders, you might prefer a centralized solution.
+If you envy Rubyists for their centralized management of gemsets, this collection of scripts might be for you. Virtualenvs work great when they are used for a single project each. If you find yourself reusing the same virtualenvs in multiple folders, you might prefer a centralized solution.
 
 With these scripts you:
 - organize all your virtualenvs in `~/.virtualenvs/`
