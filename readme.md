@@ -1,4 +1,4 @@
-**Note:** the accepted package for doing this is [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org/en/latest/). This project was started before I knew virtualenvwrapper, and continued out of pure interest and fun.
+**Note:** the default package for doing this is [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org/en/latest/). This project was started before I knew virtualenvwrapper, and continued out of pure interest and fun.
 
 
 # Python Virtualenv Tools
