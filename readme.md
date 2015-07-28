@@ -3,14 +3,14 @@
 
 # Python Virtualenv Tools
 
-If you envy Rubyists for their nice management of gemsets, this collection of script might be for you. Virtualenvs work great when they are used for a single project. If you find yourself reusing virtualenvs in multiple folders, you might prefer a centralized solution.
+If you envy Rubyists for their centralized management of gemsets, this collection of script might be for you. Virtualenvs work great when they are used for a single project each. If you find yourself reusing the same virtualenvs in multiple folders, you might prefer a centralized solution.
 
 With these scripts you:
 - organize all your virtualenvs in `~/.virtualenvs/`
 - activate virtualenvs using `activate foo`, including bash tab completion
 - list available virtualenvs using `list-envs`
 - create new virtualenvs using the same old `virtualenv` command
-- inherit system site packages in new virtualenvs by default (if you don't want this behaviour, pass `--no-site-packages`)
+- inherit system site packages in new virtualenvs by default (if you don't want this behaviour, use `virtualenv --no-site-packages`)
 
 
 ## Usage
@@ -34,7 +34,7 @@ pandas==0.16.2
 requests==2.7.0
 scipy==0.12.1
 virtualenv==13.1.0
-... (this is of course a stripped example output)
+...
 
 (foo)$ # Deactivate the virtualenv:
 (foo)$ deactivate
