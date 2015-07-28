@@ -1,3 +1,6 @@
+**Note:** the accepted package for doing this is [virtualenvwrapper](https://virtualenvwrapper.readthedocs.org/en/latest/). This project was started before I knew virtualenvwrapper, and continued out of pure interest and fun.
+
+
 # Python Virtualenv Tools
 
 If you envy Rubyists for their nice management of gemsets, this collection of script might be for you. Virtualenvs work great when they are used for a single project. If you find yourself reusing virtualenvs in multiple folders, you might prefer a centralized solution.
